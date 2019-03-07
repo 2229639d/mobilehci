@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "46885911899",
+    "firebase_url": "https://mobilehci-a1f77.firebaseio.com",
+    "project_id": "mobilehci-a1f77",
+    "storage_bucket": "mobilehci-a1f77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46885911899:android:bda1ca3ed8fdec1d",
+        "android_client_info": {
+          "package_name": "com.example.macbookpro.mobilehci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46885911899-i95813aor85mh2tvl8g7ihl86b5puqq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.macbookpro.mobilehci",
+            "certificate_hash": "1acf66cfcc5a22efe08b97ab83c7ae0378a1839d"
+          }
+        },
+        {
+          "client_id": "46885911899-va9dll5i2533r8guogo14mrj5vo0ea2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgZ1Ba9___lGPWhi_rscwHo7MLXqYNjww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46885911899-va9dll5i2533r8guogo14mrj5vo0ea2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

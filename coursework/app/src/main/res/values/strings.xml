@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">mobileHCI</string>
+    <string name="email">email</string>
+    <string name="password">passwords</string>
+
+    <string name="signin">log in</string>
+    <string name="success_login">log in successfully</string>
+    <string name="failed_login">fali to log in</string>
+
+    <string name="signup">sign up</string>
+    <string name="success_signup">sign up successfully</string>
+    <string name="failed_signup">fail to sign up</string>
+    <string name="title_activity_park">Map</string>
+
+</resources>
