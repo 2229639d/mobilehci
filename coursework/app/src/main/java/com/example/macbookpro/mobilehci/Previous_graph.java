@@ -51,20 +51,21 @@ public class Previous_graph extends AppCompatActivity {
         barChart = (BarChart) findViewById(R.id.bargraph);
 
         ArrayList<BarEntry> barEntries = new ArrayList<>();
-        barEntries.add(new BarEntry(44f,0));
-        barEntries.add(new BarEntry(33f,1));
-        barEntries.add(new BarEntry(22f,2));
-        barEntries.add(new BarEntry(11f,3));
-        barEntries.add(new BarEntry(66f,4));
-        barEntries.add(new BarEntry(77f,5));
-        barEntries.add(new BarEntry(100f,6));
-        barEntries.add(new BarEntry(20f,7));
+        barEntries.add(new BarEntry(44f,0, "28/02"));
+        barEntries.add(new BarEntry(32f,1,"28/02"));
+        barEntries.add(new BarEntry(22f,2,"28/02"));
+        barEntries.add(new BarEntry(12f,3,"28/02"));
+        barEntries.add(new BarEntry(11f,4,"28/02"));
+        barEntries.add(new BarEntry(22f,5,"28/02"));
+        barEntries.add(new BarEntry(34f,6,"28/02"));
+        barEntries.add(new BarEntry(29f,7,"28/02"));
 
 
         BarDataSet barDataSet = new BarDataSet(barEntries,"Miles");
         barDataSet.setValueTextSize(20f);
         barDataSet.getStackLabels();
         barDataSet.setLabel("Miles");
+        barDataSet.setBarSpacePercent(35f);;
 
         barDataSet.setBarSpacePercent(10f);
         barDataSet.setValueTextColor(Color.rgb(42, 171, 207));
@@ -80,6 +81,7 @@ public class Previous_graph extends AppCompatActivity {
         theDates.add("07/03");
 
         BarData theData = new BarData(theDates,barDataSet);
+
         barChart.setDescription(null);
         barChart.setData(theData);
         barChart.setTouchEnabled(true);
@@ -87,9 +89,13 @@ public class Previous_graph extends AppCompatActivity {
         barChart.setScaleEnabled(true);
         barChart.invalidate();
 
+        barChart.getAxisLeft().setTextSize(100f);
+        barChart.getAxisRight().setDrawLabels(false);
         XAxis xAxis = barChart.getXAxis();
         xAxis.setTextSize(100f);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+
+
 
 
     }
