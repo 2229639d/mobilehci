@@ -61,10 +61,10 @@ public class Park extends AppCompatActivity
         mapFragment.getMapAsync(this);
 
         bicycle_park_positin.add(new bicyclePostion(55.874957, -4.292568,"bicycle park 1"));
-        bicycle_park_positin.add(new bicyclePostion(55.872773, -4.292413,"bicycle park 2"));
-        bicycle_park_positin.add(new bicyclePostion(55.870741, -4.288813,"bicycle park 3"));
+        bicycle_park_positin.add(new bicyclePostion(55.872678, -4.292146,"bicycle park 2"));
+        bicycle_park_positin.add(new bicyclePostion(55.870885, -4.288744,"bicycle park 3"));
         bicycle_park_positin.add(new bicyclePostion(55.874534, -4.289007,"bicycle park 4"));
-        bicycle_park_positin.add(new bicyclePostion(55.871976, -4.285820,"bicycle park 5"));
+        bicycle_park_positin.add(new bicyclePostion(55.872104, -4.285789,"bicycle park 5"));
 
         initial_builder();
     }
@@ -147,35 +147,74 @@ public class Park extends AppCompatActivity
     }
 public void init_draw_polyline(){
     line1 =  map.addPolyline(new PolylineOptions()
-            .add(startLatLng,new LatLng(bicycle_park_positin.get(0).getV(),bicycle_park_positin.get(0).getV2()))
+            .add(startLatLng,
+                    new LatLng(55.872677, -4.290650),
+                    new LatLng(55.873466, -4.291661),
+                    new LatLng(55.873516, -4.291712),
+                    new LatLng(55.873888, -4.292219),
+                    new LatLng(55.873973, -4.292306),
+                    new LatLng(55.874079, -4.292492),
+                    new LatLng(55.874178, -4.292570),
+                    new LatLng(55.874261, -4.292583),
+                    new LatLng(55.874291, -4.292578),
+                    new LatLng(55.874320, -4.292565),
+                    new LatLng(55.874447, -4.292452),
+                    new LatLng(55.874473, -4.292539),
+                    new LatLng(55.874547, -4.292620),
+                    new LatLng(55.874571, -4.292620),
+                    new LatLng(55.874888, -4.292304),
+                    new LatLng(55.874940, -4.292469),
+                    new LatLng(55.874960, -4.292523),
+                    new LatLng(55.874951, -4.292600),
+                    new LatLng(55.874958, -4.292669),
+                    new LatLng(55.874976, -4.292735),
+                    new LatLng(bicycle_park_positin.get(0).getV(),bicycle_park_positin.get(0).getV2()))
             .width(5)
             .color(Color.RED));
     line1.setVisible(false);
 
     line2 =  map.addPolyline(new PolylineOptions()
-            .add(startLatLng,new LatLng(bicycle_park_positin.get(1).getV(),bicycle_park_positin.get(1).getV2()))
+            .add(startLatLng,
+                    new LatLng(55.872671, -4.290667),
+                    new LatLng(55.872752, -4.291641),
+                    new LatLng(55.872853, -4.292183),
+                    new LatLng(55.872795, -4.292225),
+                    new LatLng(55.872758, -4.292117),
+                    new LatLng(55.872696, -4.292133),
+                    new LatLng(bicycle_park_positin.get(1).getV(),bicycle_park_positin.get(1).getV2()))
             .width(5)
             .color(Color.RED));
+
     line2.setVisible(false);
 
     line3 =  map.addPolyline(new PolylineOptions()
             .add(startLatLng,
                     new LatLng(55.872060, -4.289242),
                     new LatLng(55.872041, -4.289384),
-
+                    new LatLng(55.872079, -4.289751),
+                    new LatLng(55.871452, -4.290051),
+                    new LatLng(55.871375, -4.290021),
+                    new LatLng(55.871083, -4.290141),
+                    new LatLng(55.870885, -4.288744),
                     new LatLng(bicycle_park_positin.get(2).getV(),bicycle_park_positin.get(2).getV2()))
             .width(5)
             .color(Color.RED));
     line3.setVisible(false);
 
     line4 =  map.addPolyline(new PolylineOptions()
-            .add(startLatLng,new LatLng(bicycle_park_positin.get(3).getV(),bicycle_park_positin.get(3).getV2()))
+            .add(startLatLng,
+                    new LatLng(55.874369, -4.287667),
+                    new LatLng(55.874679, -4.288873),
+                    new LatLng(bicycle_park_positin.get(3).getV(),bicycle_park_positin.get(3).getV2()))
             .width(5)
             .color(Color.RED));
     line4.setVisible(false);
 
     line5 =  map.addPolyline(new PolylineOptions()
-            .add(startLatLng,new LatLng(bicycle_park_positin.get(4).getV(),bicycle_park_positin.get(4).getV2()))
+            .add(startLatLng,
+                    new LatLng(55.872209, -4.287120),
+
+                    new LatLng(bicycle_park_positin.get(4).getV(),bicycle_park_positin.get(4).getV2()))
             .width(5)
             .color(Color.RED));
     line5.setVisible(false);
