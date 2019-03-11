@@ -48,6 +48,10 @@
             android:theme="@style/FullScreenTheme">
 
         </activity>
+        <activity
+            android:name=".RideActivity"
+            android:theme="@style/FullScreenTheme"/>
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />

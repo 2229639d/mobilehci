@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Profile extends AppCompatActivity {
-    Button previous, goal, park;
+    Button previous, start, park;
     ImageButton logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,16 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this,Park.class);
+                startActivity(intent);
+
+            }
+        });
+
+        start = (Button) findViewById(R.id.startBTN);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this,RideActivity.class);
                 startActivity(intent);
 
             }
