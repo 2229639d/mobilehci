@@ -71,7 +71,7 @@ public class RideActivity extends AppCompatActivity {
         public void run() {
             distance.setText(String.format("Distance:   %s meters", String.valueOf(count*2))); // update your text
             calories.setText(String.format("Calories:   %s kcal", String.valueOf(count*4))); // update your text
-            speed.setText(String.format("Speed:   %s mph", String.valueOf(count/3))); // update your text
+            speed.setText(String.format("Speed:   %s km/h", String.valueOf(count/3))); // update your text
         }
     };
 

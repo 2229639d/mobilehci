@@ -237,7 +237,7 @@ public void init_draw_polyline(){
                 line1.setVisible(true);
                 mileText.setVisibility(View.VISIBLE);
                 timeText.setVisibility(View.VISIBLE);
-                mileText.setText("1 mile");
+                mileText.setText("1600 meters");
                 timeText.setText("20 minutes");
               //  Toast.makeText(getApplicationContext(), "bicycle park 1", Toast.LENGTH_LONG).show();
                 break;
@@ -246,7 +246,7 @@ public void init_draw_polyline(){
                 line2.setVisible(true);
                 mileText.setVisibility(View.VISIBLE);
                 timeText.setVisibility(View.VISIBLE);
-                mileText.setText("0.5 miles");
+                mileText.setText("800 meters");
                 timeText.setText("10 minutes");
                // Toast.makeText(getApplicationContext(), "bicycle park 2", Toast.LENGTH_LONG).show();
                 break;
@@ -255,7 +255,7 @@ public void init_draw_polyline(){
                 line3.setVisible(true);
                 mileText.setVisibility(View.VISIBLE);
                 timeText.setVisibility(View.VISIBLE);
-                mileText.setText("0.7 miles");
+                mileText.setText("1200 meters");
                 timeText.setText("14 minutes");
             //    Toast.makeText(getApplicationContext(), "bicycle park 3", Toast.LENGTH_LONG).show();
                 break;
@@ -263,7 +263,7 @@ public void init_draw_polyline(){
                 line4.setVisible(true);
                 mileText.setVisibility(View.VISIBLE);
                 timeText.setVisibility(View.VISIBLE);
-                mileText.setText("0.6 miles");
+                mileText.setText("1050 meters");
                 timeText.setText("12 minutes");
              //   Toast.makeText(getApplicationContext(), "bicycle park 4", Toast.LENGTH_LONG).show();
                 break;
@@ -271,7 +271,7 @@ public void init_draw_polyline(){
                line5.setVisible(true);
                 mileText.setVisibility(View.VISIBLE);
                 timeText.setVisibility(View.VISIBLE);
-                mileText.setText("0.5 miles");
+                mileText.setText("800 meters");
                 timeText.setText("10 minutes");
                 //Toast.makeText(getApplicationContext(), "bicycle park 5", Toast.LENGTH_LONG).show();
                 break;

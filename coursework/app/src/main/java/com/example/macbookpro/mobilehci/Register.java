@@ -30,10 +30,10 @@ public class Register extends AppCompatActivity {
 
     private EditText editTextEmail;
     private EditText editTextPassword;
-
+    private EditText editTextPassword2;
     private String email = "";
     private String password = "";
-
+    private String password2 = "";
     private Button singupBTN;
     private ImageButton homeBTN;
     @Override
@@ -47,6 +47,8 @@ public class Register extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         editTextEmail = (EditText) findViewById(R.id.registerEmail);
         editTextPassword = (EditText) findViewById(R.id.registerPw);
+        editTextPassword2 = (EditText) findViewById(R.id.pw2);
+
         singupBTN= (Button) findViewById(R.id.registerBTN);
         singupBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,10 +72,10 @@ public class Register extends AppCompatActivity {
 
     private boolean isValidEmail() {
         if (email.isEmpty()) {
-
+            Toast.makeText(Register.this, "Please check Email ", Toast.LENGTH_SHORT).show();
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-
+            Toast.makeText(Register.this, "Please check Email ", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
@@ -88,14 +90,19 @@ public class Register extends AppCompatActivity {
         } else if (!PASSWORD_PATTERN.matcher(password).matches()) {
 
             return false;
-        } else {
+        }else if(!password.equals(password2)){
+
+            Toast.makeText(Register.this, "Please check your confirm passwords ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else {
             return true;
         }
     }
     public void singUp(View view) {
         email = editTextEmail.getText().toString();
         password = editTextPassword.getText().toString();
-
+        password2 = editTextPassword2.getText().toString();
         if(isValidEmail() && isValidPasswd()) {
             createUser(email, password);
         }
